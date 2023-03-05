@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <link rel="icon" type="x-icon" href="Gear.gif">
+    <script>
+        var second=0;
+        function displays(){
+            second +=1;
+            document.getElementById("sec").innerText="Thanx for visiting the Website you will be redirected in "+second+" seconds..";
+            
+        }
+        setInterval(displays,1000);
+        function redirect(){
+            window.location="Calculator.html";
+        }
+        setTimeout('redirect()',9000);
+    </script>
+
+</head>
+<body>
+    <p align="center"><font size="30">Welcome!!!</font></p><hr><br>
+    <div id="sec"></div>
+    <center>
+        <br><br><br><img src="Gear.gif">
+    </center>
+    
+</body>
+<footer align="center">@MVSK 2003</footer>
+</html>
